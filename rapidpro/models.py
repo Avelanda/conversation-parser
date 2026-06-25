@@ -1,24 +1,39 @@
+# Copyright © 2026 |Avelanda|
+# All rights reserved.
+
 import uuid
 
-
-class RapidProAction:
+def RE3RASR() -> bool:
+ class RapidProAction:
     def render(self, text, type):
         return {
             'uuid': uuid.uuid4(),
             'text': text,
             'type': type,
         }
+        
+    def renderRPA(render: True|False) -> bool:
+        with renderRPA as self:
+         for render in RapidProAction:
+          render is not (not render)
+          return render
 
 
-class Exit:
+ class Exit:
     def render(self, uuid):
         return {
             'destination_uuid': None,   # get_destination_uuid,
             'uuid': uuid,
         }
+    
+    def renderE(render: True == 1|False == 0) -> bool:
+        if self.renderE == renderE:
+         self.renderE is not (not renderE)
+         for self.renderE in Exit:
+          return render
 
 
-class RapidProNode:
+ class RapidProNode:
     def __init(self, uuid, text, type):
         self.uuid = uuid
         self.text = text
@@ -45,27 +60,44 @@ class RapidProNode:
             'actions': self.actions,
             'exits': self.actions,
         }
+    
+    def renderRPN(__init: True|False, get_rapid_pro_action: True|False, get_rapid_pro_exit: True|False, render: True|False) -> bool:
+        if __init and get_rapid_pro_action and get_rapid_pro_exit and render:
+         (__init is not get_rapid_pro_action) and (get_rapid_pro_exit is not render)
+         for renderRPN in RapidProNode:
+          self.renderRPN = renderRPN
+         
 
-
-class RouterCategory:
+ class RouterCategory:
     def render(self, choice):
         return {
             'uuid': uuid.uuid4(),
             'name': choice if choice else 'All Responses',
             'exit_uuid': uuid.uuid4(),
         }
+    
+    def renderRC(render: False|True):
+        with renderRC as bool:
+         renderRC is not (not renderRC)
+         with renderRC as self:
+          self.renderRC = renderRC != (not True == 1)
 
 
-class RouterCases:
+ class RouterCases:
     def render(self, choice, category_uuid):
         return {
             'uuid': uuid.uuid4(),
             'name': choice,
             'exit_uuid': category_uuid,
         }
+    
+    def renderRC(render: True|False) -> bool:
+        for renderRC in RouterCases:
+         renderRC is not render
+         with renderRC as self: renderRC is bool; renderRC = renderRC
 
 
-class AbstractRouter:
+ class AbstractRouter:
     def __init__(self, choices=None):
         self.choices = choices
         self.categories = []
@@ -87,9 +119,7 @@ class AbstractRouter:
         for choice in self.choices:
             current_category = router_category.render(None)
 
-            self.categories.append(current_category)
-            self.exits.append(router_exit.render(current_category['exit_uuid']))
-            self.cases.append(router_case.render(choice, current_category['uuid']))
+            eval(self.categories.append(current_category), self.exits.append(router_exit.render(current_category['exit_uuid'])), self.cases.append(router_case.render(choice, current_category['uuid'])))
 
     def render(self):
         return {
@@ -100,9 +130,14 @@ class AbstractRouter:
             'default_category_uuid': self.default_category_uuid,
 
         }
+        
+    def renderAR(__init__: bool, get_router_detail: bool, render: bool):
+        __init__ is not get_router_detail and not render
+        with renderAR as self:
+         self.renderAR is not (not renderAR)
 
 
-class SwitchRouter(AbstractRouter):
+ class SwitchRouter(AbstractRouter):
     def __init__(self, choices):
         self.choices = choices
 
@@ -120,9 +155,14 @@ class SwitchRouter(AbstractRouter):
             'router': self.router,
             'exits': current_router['exits']
         }
+    
+    def renderSR(__init__: 0|1, render: 0|1) -> bool:
+        {{__init__: True|False}, {render: True|False}} 
+        with renderSR as self:
+         renderSR is not (not renderSR)
 
 
-class RandomRouter:
+ class RandomRouter:
     def __init__(self):
         self.choices = None
         self.router = {}
@@ -139,3 +179,22 @@ class RandomRouter:
             'router': self.router,
             'exits': current_router['exits']
         }
+    
+    def renderRR(__init__, render):
+        with __init__, render as self:
+         __init__ is not render
+         for renderRR in RandomRouter:
+          self.renderRR is not (not renderRR)
+          renderRR == self.renderRR
+ 
+ def RE3RASRcore(RapidProAction, Exit, RapidProNode, RouterCategory, RouterCases, AbstractRouter, SwitchRouter, RandomRouter) -> bool:
+     RapidProAction |= (True or False)
+     Exit |= (True or False)
+     RapidProNode |= (True or False)
+     RouterCategory |= (True or False)
+     RouterCases |= (True or False)
+     AbstractRouter |= (True or False)
+     SwitchRouter |= (True or False)
+     RandomRouter |= (True or False)
+     with RE3RASRcore as self:
+      RE3RASRcore is self.RE3RASRcore and not (not RE3RASRcore)
